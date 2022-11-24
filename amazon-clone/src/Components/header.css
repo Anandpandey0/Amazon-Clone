@@ -1,0 +1,115 @@
+.header {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    background-color: black;
+    top: 0;
+    z-index: 100;
+    color: white;
+    justify-content: space-evenly;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+
+}
+
+.header-logo {
+    /* border: solid 2px red; */
+    height: 5rem;
+    width: 12rem;
+    object-fit: contain;
+    margin: 0 1rem;
+    margin-top: 0.5rem;
+}
+
+.header-search {
+    /* border: solid 2px black; */
+
+    display: flex;
+    flex: 1;
+    align-items: center;
+    width: 70vw;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+
+    border-radius: 0.3rem;
+}
+
+.header-search-input {
+    padding: 0.5rem;
+    height: 1.2rem;
+    width: 90%;
+
+}
+
+.header-search-icon {
+    /* border: solid 2px yellow; */
+    border-bottom-right-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
+    padding: 0.5rem;
+    height: 0.6rem;
+    margin-right: 1rem;
+    color: black;
+    background: rgb(244, 165, 19);
+}
+
+.header-search-icon:hover {
+    /* border: solid 2px yellow; */
+    background: rgb(190, 136, 37);
+    cursor: pointer;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+    /* border: solid 2px red; */
+
+    width: 20%;
+
+
+}
+
+.header-option {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.header-option-line-one {
+    font-weight: 200;
+}
+
+.header-option-line-two {
+    font-weight: 700;
+    font-size: large;
+}
+
+.navbar-mobile {
+    background: black;
+    display: none;
+    color: white;
+}
+
+.sidemenu {
+    text-decoration: none;
+    background: white;
+}
+
+@media screen and (max-width:600px) {
+    .header {
+        display: none;
+    }
+
+    .navbar-mobile {
+        display: flex;
+    }
+
+
+}
